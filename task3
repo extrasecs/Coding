@@ -1,0 +1,9 @@
+import string
+import random
+a = list(string.ascii_uppercase)
+let = [random.choice(a) for x in range(3)]
+num = [random.randint(0, 9) for x in range(3)]
+#не успел сделать последний пункт
+
+print(let+num)
+    
