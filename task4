@@ -1,0 +1,9 @@
+from collections import Counter
+text = str(input()).lower()
+counts = Counter(text)
+for symbol, count in counts.items():
+    print(f'Символ {symbol} - {count} раз')
+
+print('Самые частые:')
+for symbol, count in counts.most_common(3):
+    print(f'Символ {symbol} - {count} раз')
